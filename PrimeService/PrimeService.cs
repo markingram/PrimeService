@@ -4,9 +4,11 @@ namespace Prime.Services
 {
     public class PrimeService
     {
+        private const int LowestPrimeNumber = 2;
+
         public bool IsPrime(int candidate)
         {
-            if (candidate < 2)
+            if (candidate < LowestPrimeNumber)
             {
                 return false;
             }
